@@ -2,62 +2,26 @@ package com.example.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-// Cyber / Reqable DevTools Theme Palette
-val CyberBg = Color(0xFF0B0F19)
-val CyberSurface = Color(0xFF131B2E)
-val CyberSurfaceVariant = Color(0xFF1B243B)
-val CyberCardBorder = Color(0xFF24304D)
+// Primary & Accent Colors
+val ElectricIndigo = Color(0xFF6366F1)
+val ElectricIndigoLight = Color(0xFF818CF8)
+val ElectricIndigoDark = Color(0xFF4F46E5)
 
-val CyberCyan = Color(0xFF00F0FF)
-val CyberCyanDark = Color(0xFF0099AA)
-val CyberViolet = Color(0xFF8B5CF6)
-val CyberGreen = Color(0xFF00FF9D)
-val CyberGreenDark = Color(0xFF00A865)
-val CyberAmber = Color(0xFFFFB800)
-val CyberRose = Color(0xFFFF3366)
-val CyberBlue = Color(0xFF3B82F6)
+val CyanAccent = Color(0xFF06B6D4)
+val CyanAccentLight = Color(0xFF22D3EE)
 
-val CyberTextPrimary = Color(0xFFF8FAFC)
-val CyberTextSecondary = Color(0xFF94A3B8)
-val CyberTextMuted = Color(0xFF64748B)
+val CoralAccent = Color(0xFFF43F5E)
 
-// Status Code Color mapping
-fun getStatusColor(code: Int): Color {
-    return when {
-        code in 200..299 -> CyberGreen
-        code in 300..399 -> CyberCyan
-        code in 400..499 -> CyberAmber
-        code >= 500 -> CyberRose
-        code == 0 -> Color(0xFFE11D48)
-        else -> CyberTextSecondary
-    }
-}
+// Dark Theme Colors
+val Slate950 = Color(0xFF020617)
+val Slate900 = Color(0xFF0F172A)
+val Slate800 = Color(0xFF1E293B)
+val Slate700 = Color(0xFF334155)
+val Slate400 = Color(0xFF94A3B8)
+val Slate200 = Color(0xFFE2E8F0)
 
-// Method Color mapping
-fun getMethodColor(method: String): Color {
-    return when (method.uppercase()) {
-        "GET" -> CyberGreen
-        "POST" -> CyberCyan
-        "PUT" -> CyberAmber
-        "PATCH" -> Color(0xFFF59E0B)
-        "DELETE" -> CyberRose
-        "OPTIONS", "HEAD" -> CyberViolet
-        "WS", "WEBSOCKET" -> Color(0xFFEC4899)
-        else -> CyberBlue
-    }
-}
+// Light Theme Colors
+val Slate50 = Color(0xFFF8FAFC)
+val Slate100 = Color(0xFFF1F5F9)
+val Slate600 = Color(0xFF475569)
 
-// Resource Type Tag Color
-fun getResourceTypeColor(type: String): Color {
-    return when (type.lowercase()) {
-        "fetch", "xhr" -> CyberCyan
-        "document", "doc" -> CyberBlue
-        "script", "js" -> CyberAmber
-        "stylesheet", "css" -> CyberViolet
-        "image", "img" -> Color(0xFF10B981)
-        "media", "video", "audio" -> Color(0xFFF43F5E)
-        "font" -> Color(0xFFA855F7)
-        "websocket", "ws" -> Color(0xFFEC4899)
-        else -> CyberTextMuted
-    }
-}

@@ -1,0 +1,6 @@
+{
+  "name": "Audio Streamer",
+  "description": "نموذج أولي لتشغيل الصوت من روابط يوتيوب مباشرة (Streaming) باستخدام NewPipeExtractor و ExoPlayer في الخلفية مع Foreground Service",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

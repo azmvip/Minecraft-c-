@@ -3,7 +3,6 @@
     <item
         android:width="66dp"
         android:height="66dp"
-        android:drawable="@drawable/reqinspect_icon_1787489532781"
+        android:drawable="@drawable/ic_app_foreground"
         android:gravity="center" />
 </layer-list>
-
